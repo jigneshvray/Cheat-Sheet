@@ -1,0 +1,31 @@
+# kubeadm init error
+
+Following Kubernetes official installation instruction for containerd and kubeadm init will
+fail with unknown service runtime.v1alpha2.RuntimeService.
+
+// error Description 
+
+    # Commands from https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd
+apt-get update && apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+apt-get update && apt-get install -y containerd.io
+
+# Configure containerd
+mkdir -p /etc/containerd
+containerd config default > /etc/containerd/config.toml
+systemctl restart containerd
+
+kubeadm init
+...
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+	[ERROR CRI]: container runtime is not running: output: time="2020-09-24T11:49:16Z" level=fatal msg="getting status of runtime failed: rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService"
+, error: exit status 1
+
+
+# Solution 
+rm /etc/containerd/config.toml
+systemctl restart containerd
+kubeadm init
+
