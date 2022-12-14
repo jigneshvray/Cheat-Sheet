@@ -1,4 +1,6 @@
 # Cheat-Sheet
 
+# Imp thing is noted between "< >"
 
-LPIC-1 & LPIC-2 from CBT-Nugget 
+# Linux Notes { LPIC-1 & LPIC-2 from CBT-Nugget } 
+

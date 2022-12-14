@@ -1,2 +1,2 @@
-lsmod == show the status of modules in the linux kernel
+lsmod == show the status of modules in the linux kernel <which are loaded>
 
