@@ -1,0 +1,13 @@
+pwd ==  Present Working Directory
+cd  == change Directory
+ls  == List directory contents
+
+        Syntax  == ls -l   "For list out in deatiled content"
+
+ps  == Show process
+cp  == Copy Files or Folder     
+       
+       Syntax  ==  cp "Files which want to copy" "Destination"
+
+man == Manual of all commands
+
