@@ -1,7 +1,4 @@
-							Gamut Gurus Technologies
-		Contact: Trainer: +91-97393 68768. Course Advisor: +91-944897 1000. 		
-							Email: info@gamutgurus.com
-	=================================================================================
+
 							VM creation in AWS
 						----------------------------
 
@@ -64,4 +61,4 @@ Actions --> Instance Status --> Terminate (This will destroy the machine -- Note
 -
 P Nageswara Rao,
 +91- 97393 68768
-Gamut Gurus Technologies
+

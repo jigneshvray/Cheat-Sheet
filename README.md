@@ -2,5 +2,5 @@
 
 # Imp thing is noted between "< >"
 
-# Linux Notes { LPIC-1 & LPIC-2 from CBT-Nugget } 
+# Linux Notes LPIC-1 & LPIC-2  
 
